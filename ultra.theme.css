@@ -1,10 +1,10 @@
 /**
- * @name Ultra
+ * @name Ultra (Modified)
  * @version 1.0.0
  * @author jw0902 
  * @authorId 780493281552760862
  * @description A Smooth, Black theme
- * @source https://github.com/0xJWLABS/DiscordModifiedThemes/tree/main
+ * @source https://github.com/TheCommieAxolotl/BetterDiscord-Stuff/tree/main/Ultra
  * @invite g2KnUw7u7N
 */
 
@@ -18,12 +18,6 @@
 
 /* Source */
 @import url("https://thecommieaxolotl.github.io/BetterDiscord-Stuff/Ultra/Clients/betterdiscord.css");
-
-@property --angle {
-    inherits: false;
-    initial-value: 0deg;
-    syntax: "<angle>";
-}
 
 :root,
 .theme-dark {
@@ -68,22 +62,8 @@
 }
 
 .vc-channeltabs-tab-selected {
-    animation: rotate 2.5s infinite linear;
-    background:
-        linear-gradient(
-            to bottom,
-            color-mix(in srgb, var(--background-accent) 70%, var(--background-primary)),
-            color-mix(in srgb, var(--background-accent) 70%, var(--background-primary))
-        ) padding-box,
-        conic-gradient(from var(--angle) in oklch longer hue,
-            oklch(0.866 0.181 143.97) 0 0) border-box;
-    border: 2px solid transparent;
-}
-
-@keyframes rotate {
-    to {
-        --angle: 360deg;
-    }
+    outline: none;
+    box-shadow: 0 0 12px 2px var(--selected-indicator);
 }
 
 /* Made By The Commie Axolotl */
