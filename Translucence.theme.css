@@ -12,7 +12,7 @@
     --accent-saturation: 89%;
     --accent-lightness: 46%;
     --accent-hsl: var(--accent-hue), calc(var(--accent-saturation) * var(--saturation-factor)), var(--accent-lightness);
-    --accent-opacity: 1;
+    --accent-opacity: 0.8;
     --accent-text-color: #000;
     --alert-hue: 359;
     --alert-saturation: 66.7%;
@@ -117,8 +117,8 @@ body {
 
 .appMount_ea7e65 {
     background:
-        linear-gradient(rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 0)),
+        linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)),
         var(--app-bg) !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
