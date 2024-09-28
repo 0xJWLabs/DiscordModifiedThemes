@@ -30,7 +30,7 @@
     --mention-saturation: var(--accent-saturation);
     --mention-lightness: var(--accent-lightness);
     --mention-hsl: var(--mention-hue), calc(var(--mention-saturation) * var(--saturation-factor)), var(--mention-lightness);
-    --mention-opacity: 1;
+    --mention-opacity: 0.8;
     --reply-hue: 226;
     --reply-saturation: 77.4%;
     --reply-lightness: 61.8%;
@@ -1199,11 +1199,13 @@ body {
 .vc-addon-card {
     background-color: var(--card-color) !important;
     border-radius: var(--card-radius) !important;
+    box-shadow: inset 0px 0px 5px 1px hsla(var(--mention-hsl), var(--mention-opacity)), 0px 0px 6px 2px hsla(var(--mention-hsl), var(--mention-opacity));
+    border: 1px solid hsla(var(--mention-hsl), var(--mention-opacity)) !important;
 }
 
 .vc-addon-card:hover {
-    box-shadow: none !important;
     transform: none !important;
+    box-shadow: inset 0px 0px 10px 3px hsla(var(--mention-hsl), var(--mention-opacity)), 0px 0px 13px 4px hsla(var(--mention-hsl), var(--mention-opacity)) !important;
 }
 
 /* VENCORD SETTINGS -> NOTIFICATION */
@@ -2357,6 +2359,11 @@ body {
 .settingsTabBar_d576e9 .item_a0.selected_a0 {
     background-color: var(--background-modifier-selected) !important;
     color: var(--interactive-active) !important;
+}
+
+.side_a0 .themed_a0.selected_a0.item_a0 {
+    border: 2px solid hsla(var(--mention-hsl), var(--mention-opacity));
+    box-shadow: inset 0px 0px 10px 3px hsla(var(--mention-hsl), var(--mention-opacity)), 0px 0px 13px 4px hsla(var(--mention-hsl), var(--mention-opacity));
 }
 
 /*
