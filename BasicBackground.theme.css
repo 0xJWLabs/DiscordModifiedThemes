@@ -77,3 +77,10 @@
 	
 	--version1_0_5:			none;				/* DO NOT CHANGE THIS VARIABLE , USED TO HIDE UPDATE NOTICE										*/
 }
+
+.field_b69b77 > div > div > div {
+  filter: blur(5px);
+}
+.field_b69b77 > div > div > div:hover {
+  filter: blur(0);
+}
