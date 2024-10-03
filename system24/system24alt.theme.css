@@ -1,0 +1,81 @@
+/**
+ * @name system24
+ * @author jw 
+ * @authorId 780493281552760862
+ * @version 0.1.0
+ * @description 🎮 TUI theme for Discord
+ * **/
+
+/* import theme modules */
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://raw.githubusercontent.com/0xJWLabs/DiscordModifiedThemes/refs/heads/main/system24/main.css'); /* main theme css. DO NOT REMOVE */
+@import url('https://refact0r.github.io/system24/src/unrounding.css') !important; /* gets rid of all rounded corners. remove if you want rounded corners. */
+
+/* customize things here */
+:root {
+	--font: 'DM Mono' !important; /* UI font name. it must be installed on your system. */
+	letter-spacing: -0.05ch !important; /* decreases letter spacing for better readability. */
+	font-weight: 300 !important; /* UI font weight. */
+	--label-font-weight: 500 !important; /* font weight for panel labels. */
+	--corner-text: 'system24' !important; /* custom text to display in the corner. only works on windows. */
+	--pad: 16px !important; /* padding between panels. */
+	--txt-pad: 10px !important; /* padding inside panels to prevent labels from clipping */
+	--panel-roundness: 0px !important; /* corner roundness of panels. ONLY WORKS IF unrounding.css IS REMOVED (see above). */
+
+	/* background colors */
+	--bg-0: oklch(19% 0 0) !important; /* main background color. */
+	--bg-1: oklch(23% 0 0) !important; /* background color for secondary elements like code blocks, embeds, etc. */
+	--bg-2: oklch(27% 0 0) !important; /* color of neutral buttons. */
+	--bg-3: oklch(31% 0 0) !important; /* color of neutral buttons when hovered. */
+
+	/* state modifiers */
+	--hover: oklch(54% 0 0 / 0.1) !important; /* color of hovered elements. */
+	--active: oklch(54% 0 0 / 0.2) !important; /* color of elements when clicked. */
+	--selected: var(--active) !important; /* color of selected elements. */
+
+	/* text colors */
+	--txt-dark: var(--bg-0) !important; /* color of dark text on colored backgrounds. */
+	--txt-link: var(--cyan) !important; /* color of links. */
+	--txt-0: oklch(90% 0 0) !important; /* color of bright/white text. */
+	--txt-1: oklch(80% 0 0) !important; /* main text color. */
+	--txt-2: oklch(60% 0 0) !important; /* color of secondary text like channel list. */
+	--txt-3: oklch(40% 0 0) !important; /* color of muted text. */
+
+	/* accent colors */
+	--acc-0: var(--purple) !important; /* main accent color. */
+	--acc-1: var(--purple-1) !important; /* color of accent buttons when hovered. */
+	--acc-2: var(--purple-2) !important; /* color of accent buttons when clicked. */
+
+	/* borders */
+	--border-width: 2px !important; /* panel border thickness. */
+	--border-color: var(--bg-3) !important; /* panel border color. */
+	--border-hover-color: var(--acc-0) !important; /* panel border color when hovered. */
+	--border-transition: 0.2s ease !important; /* panel border transition. */
+
+	/* status dot colors */
+	--online-dot: var(--green) !important; /* color of online dot. */
+	--dnd-dot: var(--pink) !important; /* color of do not disturb dot. */
+	--idle-dot: var(--yellow) !important; /* color of idle dot. */
+	--streaming-dot: var(--purple) !important; /* color of streaming dot. */
+
+	/* mention/ping and message colors */
+	--mention-txt: var(--acc-0) !important; /* color of mention text. */
+	--mention-bg: color-mix(in oklch, var(--acc-0), transparent 90%) !important; /* background highlight of mention text. */
+	--mention-overlay: color-mix(in oklch, var(--acc-0), transparent 90%) !important; /* overlay color of messages that mention you. */
+	--mention-hover-overlay: color-mix(in oklch, var(--acc-0), transparent 95%) !important; /* overlay color of messages that mention you when hovered. */
+	--reply-overlay: var(--active) !important; /* overlay color of message you are replying to. */
+	--reply-hover-overlay: var(--hover) !important; /* overlay color of message you are replying to when hovered. */
+
+	/* color shades */
+	--pink: oklch(73% 0.12 0) !important;
+	--pink-1: oklch(63% 0.12 0) !important;
+	--pink-2: oklch(53% 0.12 0) !important;
+	--purple: oklch(73% 0.12 300) !important;
+	--purple-1: oklch(63% 0.12 300) !important;
+	--purple-2: oklch(53% 0.12 300) !important;
+	--cyan: oklch(73% 0.12 200) !important;
+	--yellow: oklch(78% 0.12 80) !important;
+	--green: oklch(73% 0.12 160) !important;
+	--green-1: oklch(63% 0.12 160) !important;
+	--green-2: oklch(53% 0.12 160) !important;
+}
