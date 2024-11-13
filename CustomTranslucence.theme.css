@@ -1,0 +1,12 @@
+/* ==UserStyle==
+@name           Custom Translucence
+@namespace      github.com/0xJWLabs/DiscordModifiedThemes
+@version        0.1.0
+@description    Custom theme for dreph
+@author         0xJWLabs
+@preprocessor   stylus
+==/UserStyle== */
+
+@-moz-document regexp("https?://(canary\\.|ptb\\.|)discord.com/.*") {
+    @import url("https://raw.githubusercontent.com/0xJWLabs/DiscordModifiedThemes/main/Translucence.theme.css")
+}
